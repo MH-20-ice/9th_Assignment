@@ -1,0 +1,8 @@
+1. SELECT * FROM `test` WHERE gender LIKE '%f%';
+2.SELECT * FROM `test` WHERE gender LIKE 'ma%';
+3.SELECT * FROM `test` WHERE name LIKE 'm%' OR name LIKE 'a%';
+4.SELECT * FROM `test` WHERE name LIKE '%y';
+5.SELECT * FROM `test` WHERE name LIKE 'm%r';
+6.SELECT * FROM `test` WHERE name LIKE 'm___%';
+7.SELECT * FROM `test` WHERE gender LIKE 'm_l%';
+8.SELECT * FROM `test` WHERE gender LIKE '[a-f]%';

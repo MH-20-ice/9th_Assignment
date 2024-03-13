@@ -1,0 +1,9 @@
+CREATE TABLE worker (
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    salary DECIMAL(10, 2)
+);
+
+INSERT INTO `worker` (`first_name`, `last_name`, `salary`) VALUES ('mehedi', 'hasan', '15000') ('abu', 'rayhan', '20000'), ('israt', 'jahan', '25000') ('tama', 'debnath', '27000'), ('hemeka ', 'rashid', '25000') ('shakwat', 'hossain', '30000'), ('bristy', 'chakraborty', '35000')  ('illias', 'uddin', '30000'), ('saiful ', 'islam', '28000'), ('mukther', 'alahi', '30000') ('aisha', 'akhanda', '30000'), ('adhir', 'kundu', '20000'), ('ahsan', 'mulla', '25000'), ('evan', 'dou', '30000'), ('imran', 'haque', '35000');
+
+SELECT `first_name`, `last_name`, `salary` FROM `worker` WHERE salary BETWEEN (SELECT (MIN(salary)+1) FROM worker) AND (SELECT (MAX(salary)-1) FROM worker);

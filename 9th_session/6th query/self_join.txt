@@ -1,0 +1,9 @@
+CREATE TABLE menu (
+    parent_id INT(11),
+    name VARCHAR(20),
+);
+
+
+INSERT INTO `menu` (`parent_id`, `name`) VALUES ('1', 'mehedi'), ('2', 'bristy'), ('3', 'raju'), ('4', 'akash'), ('5', 'kawser'), ('6', 'aisha'), ('7', 'ajij');
+
+SELECT menu.name, parent_menu.name AS parent_name FROM menu INNER JOIN menu AS parent_menu ON menu.name = parent_menu.name;

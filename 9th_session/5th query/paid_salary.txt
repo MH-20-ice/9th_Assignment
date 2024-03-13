@@ -1,0 +1,5 @@
+
+
+INSERT INTO `history` (`id`, `name`, `salary`, `status`) VALUES ('1', 'mehedi', '30000', 'paid'), ('2', 'bristy', '25000', 'unpaid'), ('3', 'raju', '30000', 'paid'), ('4', 'akash', '20000', 'paid'), ('5', 'kawser', '35000', 'unpaid'), ('6', 'aisha', '40000', 'unpaid'), ('7', 'ajij', '28000', 'paid'), ('8', 'robiul', '35000', 'unpaid');
+
+SELECT `id`, `name`, `salary`, `status` ,SUM(salary) AS total_paid_amount FROM `history` WHERE status = "paid" GROUP BY id;

@@ -1,0 +1,9 @@
+CREATE TABLE worker (
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    salary DECIMAL(10, 2)
+);
+
+INSERT INTO `worker` (`first_name`, `last_name`, `salary`) VALUES ('mehedi', 'hasan', '15000') ('abu', 'rayhan', '20000'), ('israt', 'jahan', '25000') ('tama', 'debnath', '27000'), ('hemeka ', 'rashid', '25000') ('shakwat', 'hossain', '30000'), ('bristy', 'chakraborty', '35000')  ('illias', 'uddin', '30000'), ('saiful ', 'islam', '28000'), ('mukther', 'alahi', '30000');
+
+SELECT * FROM `worker` WHERE salary>= (SELECT AVG(salary) FROM worker);
